@@ -1,0 +1,173 @@
+eagle_s20
+13 23 297 16 78 0 0
+0.822 1.379 IO eagle_s20 BG256 Detail 7 1
+clock: clk_250m
+13 78 16 2
+Setup check
+23 3
+Endpoint: pwm/reg0_b3|pwm/reg0_b6
+23 0.822000 7 3
+Timing path: pwm/add0/ucin_al_u12.clk->pwm/reg0_b3|pwm/reg0_b6
+pwm/add0/ucin_al_u12.clk
+pwm/reg0_b3|pwm/reg0_b6
+25 0.822000 7.566000 6.744000 3 3
+pwm/steps[0] pwm/add0/ucin_al_u12.b[0]
+pwm/add0/c3 pwm/add0/u3_al_u13.fci
+pwm/n0[6] pwm/reg0_b3|pwm/reg0_b6.mi[0]
+
+Timing path: pwm/reg0_b2|pwm/reg0_b7.clk->pwm/reg0_b3|pwm/reg0_b6
+pwm/reg0_b2|pwm/reg0_b7.clk
+pwm/reg0_b3|pwm/reg0_b6
+55 1.035000 7.566000 6.531000 3 3
+pwm/steps[2] pwm/add0/ucin_al_u12.b[1]
+pwm/add0/c3 pwm/add0/u3_al_u13.fci
+pwm/n0[6] pwm/reg0_b3|pwm/reg0_b6.mi[0]
+
+Timing path: pwm/reg0_b4|pwm/reg0_b5.clk->pwm/reg0_b3|pwm/reg0_b6
+pwm/reg0_b4|pwm/reg0_b5.clk
+pwm/reg0_b3|pwm/reg0_b6
+85 1.208000 7.566000 6.358000 2 2
+pwm/steps[4] pwm/add0/u3_al_u13.b[0]
+pwm/n0[6] pwm/reg0_b3|pwm/reg0_b6.mi[0]
+
+
+Endpoint: pwm/reg0_b4|pwm/reg0_b5
+113 1.024000 7 3
+Timing path: pwm/add0/ucin_al_u12.clk->pwm/reg0_b4|pwm/reg0_b5
+pwm/add0/ucin_al_u12.clk
+pwm/reg0_b4|pwm/reg0_b5
+115 1.024000 7.566000 6.542000 3 3
+pwm/steps[0] pwm/add0/ucin_al_u12.b[0]
+pwm/add0/c3 pwm/add0/u3_al_u13.fci
+pwm/n0[5] pwm/reg0_b4|pwm/reg0_b5.mi[0]
+
+Timing path: pwm/reg0_b2|pwm/reg0_b7.clk->pwm/reg0_b4|pwm/reg0_b5
+pwm/reg0_b2|pwm/reg0_b7.clk
+pwm/reg0_b4|pwm/reg0_b5
+145 1.237000 7.566000 6.329000 3 3
+pwm/steps[2] pwm/add0/ucin_al_u12.b[1]
+pwm/add0/c3 pwm/add0/u3_al_u13.fci
+pwm/n0[5] pwm/reg0_b4|pwm/reg0_b5.mi[0]
+
+Timing path: pwm/reg0_b4|pwm/reg0_b5.clk->pwm/reg0_b4|pwm/reg0_b5
+pwm/reg0_b4|pwm/reg0_b5.clk
+pwm/reg0_b4|pwm/reg0_b5
+175 1.431000 7.566000 6.135000 2 2
+pwm/steps[4] pwm/add0/u3_al_u13.b[0]
+pwm/n0[5] pwm/reg0_b4|pwm/reg0_b5.mi[0]
+
+
+Endpoint: pwm/reg0_b4|pwm/reg0_b5
+203 1.182000 5 3
+Timing path: pwm/add0/ucin_al_u12.clk->pwm/reg0_b4|pwm/reg0_b5
+pwm/add0/ucin_al_u12.clk
+pwm/reg0_b4|pwm/reg0_b5
+205 1.182000 7.566000 6.384000 3 3
+pwm/steps[0] pwm/add0/ucin_al_u12.b[0]
+pwm/add0/c3 pwm/add0/u3_al_u13.fci
+pwm/n0[4] pwm/reg0_b4|pwm/reg0_b5.mi[1]
+
+Timing path: pwm/reg0_b2|pwm/reg0_b7.clk->pwm/reg0_b4|pwm/reg0_b5
+pwm/reg0_b2|pwm/reg0_b7.clk
+pwm/reg0_b4|pwm/reg0_b5
+235 1.395000 7.566000 6.171000 3 3
+pwm/steps[2] pwm/add0/ucin_al_u12.b[1]
+pwm/add0/c3 pwm/add0/u3_al_u13.fci
+pwm/n0[4] pwm/reg0_b4|pwm/reg0_b5.mi[1]
+
+Timing path: pwm/add0/ucin_al_u12.clk->pwm/reg0_b4|pwm/reg0_b5
+pwm/add0/ucin_al_u12.clk
+pwm/reg0_b4|pwm/reg0_b5
+265 1.713000 7.566000 5.853000 3 3
+pwm/steps[1] pwm/add0/ucin_al_u12.a[1]
+pwm/add0/c3 pwm/add0/u3_al_u13.fci
+pwm/n0[4] pwm/reg0_b4|pwm/reg0_b5.mi[1]
+
+
+
+Hold check
+295 3
+Endpoint: pwm/add0/ucin_al_u12
+297 1.379000 3 3
+Timing path: pwm/add0/ucin_al_u12.clk->pwm/add0/ucin_al_u12
+pwm/add0/ucin_al_u12.clk
+pwm/add0/ucin_al_u12
+299 1.379000 3.543000 4.922000 2 2
+pwm/steps[1] pwm/add0/ucin_al_u12.a[1]
+pwm/n0[1] pwm/add0/ucin_al_u12.mi[1]
+
+Timing path: pwm/reg0_b2|pwm/reg0_b7.clk->pwm/add0/ucin_al_u12
+pwm/reg0_b2|pwm/reg0_b7.clk
+pwm/add0/ucin_al_u12
+327 1.730000 3.543000 5.273000 2 2
+pwm/steps[2] pwm/add0/ucin_al_u12.b[1]
+pwm/n0[1] pwm/add0/ucin_al_u12.mi[1]
+
+Timing path: pwm/add0/ucin_al_u12.clk->pwm/add0/ucin_al_u12
+pwm/add0/ucin_al_u12.clk
+pwm/add0/ucin_al_u12
+355 2.170000 3.543000 5.713000 2 2
+pwm/steps[0] pwm/add0/ucin_al_u12.b[0]
+pwm/n0[1] pwm/add0/ucin_al_u12.mi[1]
+
+
+Endpoint: pwm/reg0_b2|pwm/reg0_b7
+383 1.435000 3 3
+Timing path: pwm/add0/ucin_al_u12.clk->pwm/reg0_b2|pwm/reg0_b7
+pwm/add0/ucin_al_u12.clk
+pwm/reg0_b2|pwm/reg0_b7
+385 1.435000 3.564000 4.999000 2 2
+pwm/steps[1] pwm/add0/ucin_al_u12.a[1]
+pwm/n0[2] pwm/reg0_b2|pwm/reg0_b7.mi[1]
+
+Timing path: pwm/reg0_b2|pwm/reg0_b7.clk->pwm/reg0_b2|pwm/reg0_b7
+pwm/reg0_b2|pwm/reg0_b7.clk
+pwm/reg0_b2|pwm/reg0_b7
+413 1.767000 3.564000 5.331000 2 2
+pwm/steps[2] pwm/add0/ucin_al_u12.b[1]
+pwm/n0[2] pwm/reg0_b2|pwm/reg0_b7.mi[1]
+
+Timing path: pwm/add0/ucin_al_u12.clk->pwm/reg0_b2|pwm/reg0_b7
+pwm/add0/ucin_al_u12.clk
+pwm/reg0_b2|pwm/reg0_b7
+441 2.197000 3.564000 5.761000 2 2
+pwm/steps[0] pwm/add0/ucin_al_u12.b[0]
+pwm/n0[2] pwm/reg0_b2|pwm/reg0_b7.mi[1]
+
+
+Endpoint: pwm/reg0_b3|pwm/reg0_b6
+469 1.538000 5 3
+Timing path: pwm/add0/ucin_al_u12.clk->pwm/reg0_b3|pwm/reg0_b6
+pwm/add0/ucin_al_u12.clk
+pwm/reg0_b3|pwm/reg0_b6
+471 1.526000 3.543000 5.069000 3 3
+pwm/steps[1] pwm/add0/ucin_al_u12.a[1]
+pwm/add0/c3 pwm/add0/u3_al_u13.fci
+pwm/n0[3] pwm/reg0_b3|pwm/reg0_b6.mi[1]
+
+Timing path: pwm/reg0_b3|pwm/reg0_b6.clk->pwm/reg0_b3|pwm/reg0_b6
+pwm/reg0_b3|pwm/reg0_b6.clk
+pwm/reg0_b3|pwm/reg0_b6
+501 1.538000 3.543000 5.081000 2 2
+pwm/steps[3] pwm/add0/u3_al_u13.a[0]
+pwm/n0[3] pwm/reg0_b3|pwm/reg0_b6.mi[1]
+
+Timing path: pwm/reg0_b4|pwm/reg0_b5.clk->pwm/reg0_b3|pwm/reg0_b6
+pwm/reg0_b4|pwm/reg0_b5.clk
+pwm/reg0_b3|pwm/reg0_b6
+529 1.611000 3.543000 5.154000 2 2
+pwm/steps[4] pwm/add0/u3_al_u13.b[0]
+pwm/n0[3] pwm/reg0_b3|pwm/reg0_b6.mi[1]
+
+
+
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  clk_250m (250.000MHz)                          3.178ns     314.663MHz        0.128ns         5        0.000ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+

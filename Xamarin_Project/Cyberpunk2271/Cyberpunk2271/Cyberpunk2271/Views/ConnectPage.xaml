@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cyberpunk2271.Views.ConnectPage"
+             xmlns:vm="clr-namespace:Cyberpunk2271.ViewModels"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:ConnectViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="{StaticResource RobotGreen}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                    <Image Source="logo_2271.png" VerticalOptions="Center" HeightRequest="64" />
+                </ContentView>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Grid.Row="1" Orientation="Vertical" Padding="30,0,30,10" Spacing="0">
+            <Label FontSize="16" Padding="0,10,0,10">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="You must connect to "/>
+                            <Span Text="YOUR ROBOT" FontAttributes="Bold"/>
+                            <Span Text=" in order to use the functionalities of this app! "/>
+                            <Span Text="
+                                  "/>
+                            <Span Text="Not seeing your device after scanning? " FontAttributes="Italic"/>
+                            <Span Text="Pair " FontAttributes="Bold"/>
+                            <Span Text="it to your phone first in your " FontAttributes="Italic"/>
+                            <Span Text="Bluetooth Settings. " FontAttributes="Bold"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button x:Name="ButtonScan" Margin="0,10,0,0" Text="List Bonded Devices"
+                        Clicked="ListBondedDevices"
+                        BackgroundColor="{StaticResource RobotBlue}"
+                        TextColor="{StaticResource PunkAqua}" />
+            <Label Text="After scanning, tap to connect."></Label>
+            <Label x:Name="lblConnected" Text="You are not connected."></Label>
+        </StackLayout>
+        <ScrollView Grid.Row="2">
+            <ListView x:Name="DevicesList" IsPullToRefreshEnabled="true" CachingStrategy="RecycleElement" 
+                      SeparatorColor="{StaticResource PunkDarkBlue}" ItemTapped ="DevicesList_ItemTapped"
+                      SeparatorVisibility="Default" Margin="30,0,30,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <!--BackgroundColor="{StaticResource PunkAqua}"-->
+                            <StackLayout>
+                                <Label Text="{Binding Name, StringFormat='Name: {0}'}"></Label>
+                                <Label Text="{Binding Address, StringFormat='MAC: {0}'}" ></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

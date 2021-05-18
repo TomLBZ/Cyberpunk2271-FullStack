@@ -1,0 +1,573 @@
+=========================================================================================================
+Auto created by the td v4.6.18154
+@Copy Right: Shanghai Anlogic Infotech, 2011 - 2021.
+Fri Apr 23 12:48:59 2021
+=========================================================================================================
+
+
+Top Model:                IO                                                              
+Device:                   eagle_s20                                                       
+Timing Constraint File:   clock_constraints.sdc                                           
+STA Level:                Detail                                                          
+Process parameter::       TT  1.10v  85C                                                  
+
+=========================================================================================================
+Timing constraint:        clock: clk_250m                                                 
+Clock = clk_250m, period 4ns, rising at 0ns, falling at 2ns
+
+16 endpoints analyzed totally, and 78 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+Minimum period is 3.178ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point pwm/reg0_b3|pwm/reg0_b6 (7 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      0.822 ns                                                        
+ StartPoint:              pwm/add0/ucin_al_u12.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b3|pwm/reg0_b6.mi[0] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/add0/ucin_al_u12.clk                                    clock                   3.810
+ launch clock edge                                           clock                   0.000
+ pwm/add0/ucin_al_u12.q[0]                                   cell                    0.146
+ pwm/add0/ucin_al_u12.b[0] (pwm/steps[0])                    net (fanout = 2)        0.749       PWM.v(7)
+ pwm/add0/ucin_al_u12.fco                                    cell                    0.836
+ pwm/add0/u3_al_u13.fci (pwm/add0/c3)                        net (fanout = 1)        0.000               
+ pwm/add0/u3_al_u13.fx[1]                                    cell                    0.453
+ pwm/reg0_b3|pwm/reg0_b6.mi[0] (pwm/n0[6])                   net (fanout = 1)        0.607       PWM.v(7)
+ pwm/reg0_b3|pwm/reg0_b6                                     path2reg0               0.143
+ Arrival time                                                                        6.744 (3 lvl)
+                                                                                          (80% logic, 20% net)
+
+ pwm/reg0_b3|pwm/reg0_b6.clk                                                         3.469
+ capture clock edge                                                                  4.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.213
+ Required time                                                                       7.566
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.822 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      1.035 ns                                                        
+ StartPoint:              pwm/reg0_b2|pwm/reg0_b7.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b3|pwm/reg0_b6.mi[0] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/reg0_b2|pwm/reg0_b7.clk                                 clock                   3.810
+ launch clock edge                                           clock                   0.000
+ pwm/reg0_b2|pwm/reg0_b7.q[1]                                cell                    0.146
+ pwm/add0/ucin_al_u12.b[1] (pwm/steps[2])                    net (fanout = 2)        0.602       PWM.v(7)
+ pwm/add0/ucin_al_u12.fco                                    cell                    0.770
+ pwm/add0/u3_al_u13.fci (pwm/add0/c3)                        net (fanout = 1)        0.000               
+ pwm/add0/u3_al_u13.fx[1]                                    cell                    0.453
+ pwm/reg0_b3|pwm/reg0_b6.mi[0] (pwm/n0[6])                   net (fanout = 1)        0.607       PWM.v(7)
+ pwm/reg0_b3|pwm/reg0_b6                                     path2reg0               0.143
+ Arrival time                                                                        6.531 (3 lvl)
+                                                                                          (82% logic, 18% net)
+
+ pwm/reg0_b3|pwm/reg0_b6.clk                                                         3.469
+ capture clock edge                                                                  4.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.213
+ Required time                                                                       7.566
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.035 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      1.208 ns                                                        
+ StartPoint:              pwm/reg0_b4|pwm/reg0_b5.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b3|pwm/reg0_b6.mi[0] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/reg0_b4|pwm/reg0_b5.clk                                 clock                   3.810
+ launch clock edge                                           clock                   0.000
+ pwm/reg0_b4|pwm/reg0_b5.q[1]                                cell                    0.146
+ pwm/add0/u3_al_u13.b[0] (pwm/steps[4])                      net (fanout = 2)        0.602       PWM.v(7)
+ pwm/add0/u3_al_u13.fx[1]                                    cell                    1.157
+ pwm/reg0_b3|pwm/reg0_b6.mi[0] (pwm/n0[6])                   net (fanout = 1)        0.607       PWM.v(7)
+ pwm/reg0_b3|pwm/reg0_b6                                     path2reg0               0.143
+ Arrival time                                                                        6.465 (2 lvl)
+                                                                                          (82% logic, 18% net)
+
+ pwm/reg0_b3|pwm/reg0_b6.clk                                                         3.469
+ capture clock edge                                                                  4.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.320
+ Required time                                                                       7.673
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.208 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point pwm/reg0_b4|pwm/reg0_b5 (7 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      1.024 ns                                                        
+ StartPoint:              pwm/add0/ucin_al_u12.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b4|pwm/reg0_b5.mi[0] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/add0/ucin_al_u12.clk                                    clock                   3.810
+ launch clock edge                                           clock                   0.000
+ pwm/add0/ucin_al_u12.q[0]                                   cell                    0.146
+ pwm/add0/ucin_al_u12.b[0] (pwm/steps[0])                    net (fanout = 2)        0.749       PWM.v(7)
+ pwm/add0/ucin_al_u12.fco                                    cell                    0.836
+ pwm/add0/u3_al_u13.fci (pwm/add0/c3)                        net (fanout = 1)        0.000               
+ pwm/add0/u3_al_u13.f[1]                                     cell                    0.264
+ pwm/reg0_b4|pwm/reg0_b5.mi[0] (pwm/n0[5])                   net (fanout = 1)        0.594       PWM.v(7)
+ pwm/reg0_b4|pwm/reg0_b5                                     path2reg0               0.143
+ Arrival time                                                                        6.542 (3 lvl)
+                                                                                          (80% logic, 20% net)
+
+ pwm/reg0_b4|pwm/reg0_b5.clk                                                         3.469
+ capture clock edge                                                                  4.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.213
+ Required time                                                                       7.566
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.024 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      1.237 ns                                                        
+ StartPoint:              pwm/reg0_b2|pwm/reg0_b7.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b4|pwm/reg0_b5.mi[0] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/reg0_b2|pwm/reg0_b7.clk                                 clock                   3.810
+ launch clock edge                                           clock                   0.000
+ pwm/reg0_b2|pwm/reg0_b7.q[1]                                cell                    0.146
+ pwm/add0/ucin_al_u12.b[1] (pwm/steps[2])                    net (fanout = 2)        0.602       PWM.v(7)
+ pwm/add0/ucin_al_u12.fco                                    cell                    0.770
+ pwm/add0/u3_al_u13.fci (pwm/add0/c3)                        net (fanout = 1)        0.000               
+ pwm/add0/u3_al_u13.f[1]                                     cell                    0.264
+ pwm/reg0_b4|pwm/reg0_b5.mi[0] (pwm/n0[5])                   net (fanout = 1)        0.594       PWM.v(7)
+ pwm/reg0_b4|pwm/reg0_b5                                     path2reg0               0.143
+ Arrival time                                                                        6.329 (3 lvl)
+                                                                                          (82% logic, 18% net)
+
+ pwm/reg0_b4|pwm/reg0_b5.clk                                                         3.469
+ capture clock edge                                                                  4.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.213
+ Required time                                                                       7.566
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.237 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      1.431 ns                                                        
+ StartPoint:              pwm/reg0_b4|pwm/reg0_b5.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b4|pwm/reg0_b5.mi[0] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/reg0_b4|pwm/reg0_b5.clk                                 clock                   3.810
+ launch clock edge                                           clock                   0.000
+ pwm/reg0_b4|pwm/reg0_b5.q[1]                                cell                    0.146
+ pwm/add0/u3_al_u13.b[0] (pwm/steps[4])                      net (fanout = 2)        0.602       PWM.v(7)
+ pwm/add0/u3_al_u13.f[1]                                     cell                    0.968
+ pwm/reg0_b4|pwm/reg0_b5.mi[0] (pwm/n0[5])                   net (fanout = 1)        0.594       PWM.v(7)
+ pwm/reg0_b4|pwm/reg0_b5                                     path2reg0               0.143
+ Arrival time                                                                        6.263 (2 lvl)
+                                                                                          (81% logic, 19% net)
+
+ pwm/reg0_b4|pwm/reg0_b5.clk                                                         3.469
+ capture clock edge                                                                  4.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.341
+ Required time                                                                       7.694
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.431 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point pwm/reg0_b4|pwm/reg0_b5 (5 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)      1.182 ns                                                        
+ StartPoint:              pwm/add0/ucin_al_u12.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b4|pwm/reg0_b5.mi[1] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/add0/ucin_al_u12.clk                                    clock                   3.810
+ launch clock edge                                           clock                   0.000
+ pwm/add0/ucin_al_u12.q[0]                                   cell                    0.146
+ pwm/add0/ucin_al_u12.b[0] (pwm/steps[0])                    net (fanout = 2)        0.749       PWM.v(7)
+ pwm/add0/ucin_al_u12.fco                                    cell                    0.836
+ pwm/add0/u3_al_u13.fci (pwm/add0/c3)                        net (fanout = 1)        0.000               
+ pwm/add0/u3_al_u13.fx[0]                                    cell                    0.387
+ pwm/reg0_b4|pwm/reg0_b5.mi[1] (pwm/n0[4])                   net (fanout = 1)        0.313       PWM.v(7)
+ pwm/reg0_b4|pwm/reg0_b5                                     path2reg1               0.143
+ Arrival time                                                                        6.384 (3 lvl)
+                                                                                          (84% logic, 16% net)
+
+ pwm/reg0_b4|pwm/reg0_b5.clk                                                         3.469
+ capture clock edge                                                                  4.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.213
+ Required time                                                                       7.566
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.182 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      1.395 ns                                                        
+ StartPoint:              pwm/reg0_b2|pwm/reg0_b7.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b4|pwm/reg0_b5.mi[1] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/reg0_b2|pwm/reg0_b7.clk                                 clock                   3.810
+ launch clock edge                                           clock                   0.000
+ pwm/reg0_b2|pwm/reg0_b7.q[1]                                cell                    0.146
+ pwm/add0/ucin_al_u12.b[1] (pwm/steps[2])                    net (fanout = 2)        0.602       PWM.v(7)
+ pwm/add0/ucin_al_u12.fco                                    cell                    0.770
+ pwm/add0/u3_al_u13.fci (pwm/add0/c3)                        net (fanout = 1)        0.000               
+ pwm/add0/u3_al_u13.fx[0]                                    cell                    0.387
+ pwm/reg0_b4|pwm/reg0_b5.mi[1] (pwm/n0[4])                   net (fanout = 1)        0.313       PWM.v(7)
+ pwm/reg0_b4|pwm/reg0_b5                                     path2reg1               0.143
+ Arrival time                                                                        6.171 (3 lvl)
+                                                                                          (86% logic, 14% net)
+
+ pwm/reg0_b4|pwm/reg0_b5.clk                                                         3.469
+ capture clock edge                                                                  4.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.213
+ Required time                                                                       7.566
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.395 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)      1.713 ns                                                        
+ StartPoint:              pwm/add0/ucin_al_u12.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b4|pwm/reg0_b5.mi[1] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/add0/ucin_al_u12.clk                                    clock                   3.810
+ launch clock edge                                           clock                   0.000
+ pwm/add0/ucin_al_u12.q[1]                                   cell                    0.146
+ pwm/add0/ucin_al_u12.a[1] (pwm/steps[1])                    net (fanout = 2)        0.173       PWM.v(7)
+ pwm/add0/ucin_al_u12.fco                                    cell                    0.881
+ pwm/add0/u3_al_u13.fci (pwm/add0/c3)                        net (fanout = 1)        0.000               
+ pwm/add0/u3_al_u13.fx[0]                                    cell                    0.387
+ pwm/reg0_b4|pwm/reg0_b5.mi[1] (pwm/n0[4])                   net (fanout = 1)        0.313       PWM.v(7)
+ pwm/reg0_b4|pwm/reg0_b5                                     path2reg1               0.143
+ Arrival time                                                                        5.853 (3 lvl)
+                                                                                          (92% logic, 8% net)
+
+ pwm/reg0_b4|pwm/reg0_b5.clk                                                         3.469
+ capture clock edge                                                                  4.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.213
+ Required time                                                                       7.566
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.713 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point pwm/add0/ucin_al_u12 (3 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       1.379 ns                                                        
+ StartPoint:              pwm/add0/ucin_al_u12.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/add0/ucin_al_u12.mi[1] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/add0/ucin_al_u12.clk                                    clock                   3.469
+ launch clock edge                                           clock                   0.000
+ pwm/add0/ucin_al_u12.q[1]                                   cell                    0.140
+ pwm/add0/ucin_al_u12.a[1] (pwm/steps[1])                    net (fanout = 2)        0.139       PWM.v(7)
+ pwm/add0/ucin_al_u12.f[1]                                   cell                    0.642
+ pwm/add0/ucin_al_u12.mi[1] (pwm/n0[1])                      net (fanout = 1)        0.394       PWM.v(7)
+ pwm/add0/ucin_al_u12                                        path2reg1               0.138
+ Arrival time                                                                        4.922 (2 lvl)
+                                                                                          (90% logic, 10% net)
+
+ pwm/add0/ucin_al_u12.clk                                                            3.810
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.341
+ Required time                                                                       3.543
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.379 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       1.730 ns                                                        
+ StartPoint:              pwm/reg0_b2|pwm/reg0_b7.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/add0/ucin_al_u12.mi[1] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/reg0_b2|pwm/reg0_b7.clk                                 clock                   3.469
+ launch clock edge                                           clock                   0.000
+ pwm/reg0_b2|pwm/reg0_b7.q[1]                                cell                    0.140
+ pwm/add0/ucin_al_u12.b[1] (pwm/steps[2])                    net (fanout = 2)        0.511       PWM.v(7)
+ pwm/add0/ucin_al_u12.f[1]                                   cell                    0.642
+ pwm/add0/ucin_al_u12.mi[1] (pwm/n0[1])                      net (fanout = 1)        0.394       PWM.v(7)
+ pwm/add0/ucin_al_u12                                        path2reg1               0.138
+ Arrival time                                                                        5.294 (2 lvl)
+                                                                                          (83% logic, 17% net)
+
+ pwm/add0/ucin_al_u12.clk                                                            3.810
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.320
+ Required time                                                                       3.564
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.730 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       2.170 ns                                                        
+ StartPoint:              pwm/add0/ucin_al_u12.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/add0/ucin_al_u12.mi[1] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/add0/ucin_al_u12.clk                                    clock                   3.469
+ launch clock edge                                           clock                   0.000
+ pwm/add0/ucin_al_u12.q[0]                                   cell                    0.140
+ pwm/add0/ucin_al_u12.b[0] (pwm/steps[0])                    net (fanout = 2)        0.643       PWM.v(7)
+ pwm/add0/ucin_al_u12.f[1]                                   cell                    0.929
+ pwm/add0/ucin_al_u12.mi[1] (pwm/n0[1])                      net (fanout = 1)        0.394       PWM.v(7)
+ pwm/add0/ucin_al_u12                                        path2reg1               0.138
+ Arrival time                                                                        5.713 (2 lvl)
+                                                                                          (82% logic, 18% net)
+
+ pwm/add0/ucin_al_u12.clk                                                            3.810
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.341
+ Required time                                                                       3.543
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            2.170 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point pwm/reg0_b2|pwm/reg0_b7 (3 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       1.435 ns                                                        
+ StartPoint:              pwm/add0/ucin_al_u12.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b2|pwm/reg0_b7.mi[1] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/add0/ucin_al_u12.clk                                    clock                   3.469
+ launch clock edge                                           clock                   0.000
+ pwm/add0/ucin_al_u12.q[1]                                   cell                    0.140
+ pwm/add0/ucin_al_u12.a[1] (pwm/steps[1])                    net (fanout = 2)        0.139       PWM.v(7)
+ pwm/add0/ucin_al_u12.fx[1]                                  cell                    0.853
+ pwm/reg0_b2|pwm/reg0_b7.mi[1] (pwm/n0[2])                   net (fanout = 1)        0.260       PWM.v(7)
+ pwm/reg0_b2|pwm/reg0_b7                                     path2reg1               0.138
+ Arrival time                                                                        4.999 (2 lvl)
+                                                                                          (93% logic, 7% net)
+
+ pwm/reg0_b2|pwm/reg0_b7.clk                                                         3.810
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.320
+ Required time                                                                       3.564
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.435 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       1.767 ns                                                        
+ StartPoint:              pwm/reg0_b2|pwm/reg0_b7.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b2|pwm/reg0_b7.mi[1] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/reg0_b2|pwm/reg0_b7.clk                                 clock                   3.469
+ launch clock edge                                           clock                   0.000
+ pwm/reg0_b2|pwm/reg0_b7.q[1]                                cell                    0.140
+ pwm/add0/ucin_al_u12.b[1] (pwm/steps[2])                    net (fanout = 2)        0.511       PWM.v(7)
+ pwm/add0/ucin_al_u12.fx[1]                                  cell                    0.792
+ pwm/reg0_b2|pwm/reg0_b7.mi[1] (pwm/n0[2])                   net (fanout = 1)        0.260       PWM.v(7)
+ pwm/reg0_b2|pwm/reg0_b7                                     path2reg1               0.138
+ Arrival time                                                                        5.310 (2 lvl)
+                                                                                          (86% logic, 14% net)
+
+ pwm/reg0_b2|pwm/reg0_b7.clk                                                         3.810
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.341
+ Required time                                                                       3.543
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.767 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       2.197 ns                                                        
+ StartPoint:              pwm/add0/ucin_al_u12.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b2|pwm/reg0_b7.mi[1] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/add0/ucin_al_u12.clk                                    clock                   3.469
+ launch clock edge                                           clock                   0.000
+ pwm/add0/ucin_al_u12.q[0]                                   cell                    0.140
+ pwm/add0/ucin_al_u12.b[0] (pwm/steps[0])                    net (fanout = 2)        0.643       PWM.v(7)
+ pwm/add0/ucin_al_u12.fx[1]                                  cell                    1.111
+ pwm/reg0_b2|pwm/reg0_b7.mi[1] (pwm/n0[2])                   net (fanout = 1)        0.260       PWM.v(7)
+ pwm/reg0_b2|pwm/reg0_b7                                     path2reg1               0.138
+ Arrival time                                                                        5.761 (2 lvl)
+                                                                                          (85% logic, 15% net)
+
+ pwm/reg0_b2|pwm/reg0_b7.clk                                                         3.810
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.320
+ Required time                                                                       3.564
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            2.197 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point pwm/reg0_b3|pwm/reg0_b6 (5 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       1.526 ns                                                        
+ StartPoint:              pwm/add0/ucin_al_u12.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b3|pwm/reg0_b6.mi[1] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/add0/ucin_al_u12.clk                                    clock                   3.469
+ launch clock edge                                           clock                   0.000
+ pwm/add0/ucin_al_u12.q[1]                                   cell                    0.140
+ pwm/add0/ucin_al_u12.a[1] (pwm/steps[1])                    net (fanout = 2)        0.139       PWM.v(7)
+ pwm/add0/ucin_al_u12.fco                                    cell                    0.846
+ pwm/add0/u3_al_u13.fci (pwm/add0/c3)                        net (fanout = 1)        0.000               
+ pwm/add0/u3_al_u13.f[0]                                     cell                    0.190
+ pwm/reg0_b3|pwm/reg0_b6.mi[1] (pwm/n0[3])                   net (fanout = 1)        0.275       PWM.v(7)
+ pwm/reg0_b3|pwm/reg0_b6                                     path2reg1               0.138
+ Arrival time                                                                        5.197 (3 lvl)
+                                                                                          (93% logic, 7% net)
+
+ pwm/reg0_b3|pwm/reg0_b6.clk                                                         3.810
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.213
+ Required time                                                                       3.671
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.526 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       1.538 ns                                                        
+ StartPoint:              pwm/reg0_b3|pwm/reg0_b6.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b3|pwm/reg0_b6.mi[1] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/reg0_b3|pwm/reg0_b6.clk                                 clock                   3.469
+ launch clock edge                                           clock                   0.000
+ pwm/reg0_b3|pwm/reg0_b6.q[1]                                cell                    0.140
+ pwm/add0/u3_al_u13.a[0] (pwm/steps[3])                      net (fanout = 2)        0.417       PWM.v(7)
+ pwm/add0/u3_al_u13.f[0]                                     cell                    0.642
+ pwm/reg0_b3|pwm/reg0_b6.mi[1] (pwm/n0[3])                   net (fanout = 1)        0.275       PWM.v(7)
+ pwm/reg0_b3|pwm/reg0_b6                                     path2reg1               0.138
+ Arrival time                                                                        5.081 (2 lvl)
+                                                                                          (87% logic, 13% net)
+
+ pwm/reg0_b3|pwm/reg0_b6.clk                                                         3.810
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.341
+ Required time                                                                       3.543
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.538 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (hold check)       1.611 ns                                                        
+ StartPoint:              pwm/reg0_b4|pwm/reg0_b5.clk (rising edge triggered by clock clk_250m)
+ EndPoint:                pwm/reg0_b3|pwm/reg0_b6.mi[1] (rising edge triggered by clock clk_250m)
+ Clock group:             clk_250m                                                        
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ pwm/reg0_b4|pwm/reg0_b5.clk                                 clock                   3.469
+ launch clock edge                                           clock                   0.000
+ pwm/reg0_b4|pwm/reg0_b5.q[1]                                cell                    0.140
+ pwm/add0/u3_al_u13.b[0] (pwm/steps[4])                      net (fanout = 2)        0.511       PWM.v(7)
+ pwm/add0/u3_al_u13.f[0]                                     cell                    0.642
+ pwm/reg0_b3|pwm/reg0_b6.mi[1] (pwm/n0[3])                   net (fanout = 1)        0.275       PWM.v(7)
+ pwm/reg0_b3|pwm/reg0_b6                                     path2reg1               0.138
+ Arrival time                                                                        5.175 (2 lvl)
+                                                                                          (85% logic, 15% net)
+
+ pwm/reg0_b3|pwm/reg0_b6.clk                                                         3.810
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.320
+ Required time                                                                       3.564
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            1.611 ns
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: 78 (STA coverage = 75.91%)
+Timing violations: 0 setup errors, and 0 hold errors.
+Minimal setup slack: 0.822, minimal hold slack: 1.379
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  clk_250m (250.000MHz)                          3.178ns     314.663MHz        0.128ns         5        0.000ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+---------------------------------------------------------------------------------------------------------

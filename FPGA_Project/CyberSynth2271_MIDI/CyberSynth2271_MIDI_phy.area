@@ -1,0 +1,42 @@
+standard
+***Report Model: IO***
+
+IO Statistics
+#IO                    10
+  #input                9
+  #output               1
+  #inout                0
+
+Utilization Statistics
+#lut                    6   out of  19600    0.03%
+#reg                    8   out of  19600    0.04%
+#le                    12
+  #lut only             4   out of     12   33.33%
+  #reg only             6   out of     12   50.00%
+  #lut&reg              2   out of     12   16.67%
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                   10   out of    188    5.32%
+  #ireg                 0
+  #oreg                 1
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+
+Detailed IO Report
+
+Name               Direction     Location     IOStandard     DriveStrength     PackReg                  
+CLK_24MHZ          INPUT         K14          LVCMOS25       N/A               NONE                     
+data_pins_i[7]     INPUT         M12          LVCMOS25       N/A               NONE                     
+data_pins_i[6]     INPUT         R16          LVCMOS25       N/A               NONE                     
+data_pins_i[5]     INPUT         N12          LVCMOS25       N/A               NONE                     
+data_pins_i[4]     INPUT         P12          LVCMOS25       N/A               NONE                     
+data_pins_i[3]     INPUT         N11          LVCMOS25       N/A               NONE                     
+data_pins_i[2]     INPUT         L10          LVCMOS25       N/A               NONE                     
+data_pins_i[1]     INPUT         P11          LVCMOS25       N/A               NONE                     
+data_pins_i[0]     INPUT         M10          LVCMOS25       N/A               NONE                     
+SPEAKER1           OUTPUT        N5           LVCMOS25       16                OREG                     
+

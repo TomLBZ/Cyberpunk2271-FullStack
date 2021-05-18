@@ -1,0 +1,16 @@
+standard
+***Report Model: IO***
+
+IO Statistics
+#IO                    10
+  #input                9
+  #output               1
+  #inout                0
+#MACRO_ADD              1
+
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |IO     |0      |9      |1      |
++-----------------------------------------+

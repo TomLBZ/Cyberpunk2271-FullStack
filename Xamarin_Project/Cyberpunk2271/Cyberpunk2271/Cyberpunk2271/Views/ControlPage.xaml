@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cyberpunk2271.Views.ControlPage"
+             xmlns:vm="clr-namespace:Cyberpunk2271.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:ControlViewModal />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Slider">
+                <Setter Property="Maximum" Value="1" />
+                <Setter Property="Minimum" Value="0"/>
+                <Setter Property="Value" Value="0.7"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                <Setter Property="MaximumTrackColor" Value="{StaticResource RobotGrey}"/>
+            </Style>
+            <Style TargetType="CheckBox">
+                <Setter Property="IsChecked" Value="false"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+            <Style TargetType="RadioButton">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource RobotGrey}"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ContentView Padding="0,5,0,5" VerticalOptions="Fill" BackgroundColor="{StaticResource PunkLightBlue}" HorizontalOptions="FillAndExpand">
+                <Image Source="logo_2271.png" VerticalOptions="Center" HeightRequest="48" />
+            </ContentView>
+            <ContentView x:Name="vColorPreview" BackgroundColor="#B300FF"
+                         VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
+                <Label Text="Control your onboard LED color!"
+                    HorizontalOptions="CenterAndExpand" VerticalOptions="Fill"/>
+            </ContentView>
+            <Grid BackgroundColor="{StaticResource RobotDarkBlue}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0" BackgroundColor="{StaticResource RobotGrey}">
+                    <Label Text="Red:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                    <CheckBox x:Name="chkboxR" Color="Red" IsChecked="true" CheckedChanged="Chkboxes_CheckedChanged"/>
+                </StackLayout>
+                <Slider x:Name="sliderR" Grid.Row="0" Grid.Column="1" Value="0.7"
+                        MinimumTrackColor="Red" ValueChanged="OnIndividualSliderValueChanged" 
+                        IsEnabled="{Binding Source={x:Reference chkboxR}, Path=IsChecked}"/>
+                <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="0" BackgroundColor="{StaticResource RobotGrey}">
+                    <Label Text="Green:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                    <CheckBox x:Name="chkboxG" Color="Green" CheckedChanged="Chkboxes_CheckedChanged"/>
+                </StackLayout>
+                <Slider x:Name="sliderG" Grid.Row="1" Grid.Column="1"
+                        MinimumTrackColor="Green" ValueChanged="OnIndividualSliderValueChanged"
+                        IsEnabled="{Binding Source={x:Reference chkboxG}, Path=IsChecked}"/>
+                <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.Column="0" BackgroundColor="{StaticResource RobotGrey}">
+                    <Label Text="Blue:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                    <CheckBox x:Name="chkboxB" Color="Blue" IsChecked="true" CheckedChanged="Chkboxes_CheckedChanged"/>
+                </StackLayout>
+                <Slider x:Name="sliderB" Grid.Row="2" Grid.Column="1" Value="1"
+                        MinimumTrackColor="Blue" ValueChanged="OnIndividualSliderValueChanged"
+                        IsEnabled="{Binding Source={x:Reference chkboxB}, Path=IsChecked}"/>
+                <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.Column="0" BackgroundColor="{StaticResource RobotGrey}">
+                    <Label Text="Master:" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                    <CheckBox x:Name="chkboxM" Color="{StaticResource RobotBlack}" 
+                              CheckedChanged="ChkboxM_CheckedChanged"/>
+                </StackLayout>
+                <Slider x:Name="sliderM" Grid.Row="3" Grid.Column="1"
+                        MinimumTrackColor="White" ValueChanged="OnMasterSliderValueChanged"
+                        IsEnabled="{Binding Source={x:Reference chkboxM}, Path=IsChecked}"/>
+                <Button x:Name="btnSyncLED" Margin="0,0,0,0" Text="Start Sync" Grid.Row="4" Grid.Column="0" CornerRadius="5"
+                        BackgroundColor="{StaticResource PunkBlue}" TextColor="{StaticResource PunkAqua}" 
+                        Clicked="ButtonSyncLED_Clicked"/>
+                <Button x:Name="btnUnsyncLED" Margin="0,0,0,0" Text="Stop Sync" Grid.Row="4" Grid.Column="1" CornerRadius="5"
+                        BackgroundColor="{StaticResource PunkBlue}" TextColor="{StaticResource PunkAqua}" 
+                        Clicked="BtnUnsyncLED_Clicked"/>
+            </Grid>
+            <Label Text="Choose your playback music!"
+                HorizontalOptions="CenterAndExpand"/>
+            <Grid BackgroundColor="{StaticResource RobotDarkBlue}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <RadioButton x:Name="rad1" TextColor="Crimson" Content="東方紅魔郷"
+                             Grid.Row="0" Grid.Column="0" FontSize="Body" IsChecked="true"
+                             IsEnabled="{Binding Source={x:Reference chkboxMUS}, Path=IsChecked}"/>
+                <RadioButton x:Name="rad2" TextColor="Purple" Content="東方妖々夢"
+                             Grid.Row="0" Grid.Column="1" FontSize="Body"
+                             IsEnabled="{Binding Source={x:Reference chkboxMUS}, Path=IsChecked}"/>
+                <RadioButton x:Name="rad3" TextColor="Green" Content="東方風神録"
+                             Grid.Row="1" Grid.Column="0" FontSize="Body"
+                             IsEnabled="{Binding Source={x:Reference chkboxMUS}, Path=IsChecked}"/>
+                <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="1" BackgroundColor="{StaticResource RobotGrey}">
+                    <CheckBox x:Name="chkboxMUS" Color="{StaticResource PunkDarkBlue}" IsChecked="true"
+                              CheckedChanged="chkboxMUS_CheckedChanged"/>
+                    <Label Text="Music Enabled" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+            </Grid>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="{Binding Source={x:Reference sliderVol}, Path=Value, StringFormat='Volume: {0:F0}'}" 
+                       VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                <Slider x:Name="sliderVol" Maximum="100" MinimumTrackColor="{StaticResource PunkDarkBlue}"
+                        IsEnabled="{Binding Source={x:Reference chkboxMUS}, Path=IsChecked}" Value="50"/>
+            </StackLayout>
+            <Button x:Name="btnUpdateMusic" Margin="0,0,0,0" Text="Update Music" CornerRadius="5"
+                    BackgroundColor="{StaticResource PunkBlue}" TextColor="{StaticResource PunkAqua}" 
+                    Clicked="btnUpdateMusic_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

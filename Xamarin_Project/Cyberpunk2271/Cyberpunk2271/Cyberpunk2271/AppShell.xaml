@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:v="clr-namespace:Cyberpunk2271.Views"
+       Title="Cyberpunk2271"
+       x:Class="Cyberpunk2271.AppShell">
+
+    <!--
+        The overall app visual hierarchy is defined here, along with navigation.
+    
+        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
+    -->
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource PunkDarkBlue}" />
+                <Setter Property="Shell.ForegroundColor" Value="{StaticResource PunkAqua}" />
+                <Setter Property="Shell.TitleColor" Value="{StaticResource PunkLightBlue}" />
+                <Setter Property="Shell.DisabledColor" Value="{StaticResource RobotDarkBlue}" />
+                <Setter Property="Shell.UnselectedColor" Value="{StaticResource RobotGrey}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource PunkBlue}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource PunkAqua}"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource RobotGrey}"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource PunkPink}"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <TabBar>
+        <ShellContent Title="Connect" Icon="ic_bluetooth_96.png" Route="ConnectPage" ContentTemplate="{DataTemplate v:ConnectPage}" />
+        <ShellContent Title="Controls" Icon="ic_led_diode_96.png" Route="ControlPage" ContentTemplate="{DataTemplate v:ControlPage}" />
+        <ShellContent Title="Drive" Icon="ic_race_car_96.png" Route="DrivePage" ContentTemplate="{DataTemplate v:DrivePage}" />
+    </TabBar>
+
+    <!--
+        If you would like to navigate to this content you can do so by calling
+        await Shell.Current.GoToAsync("//LoginPage");
+    -->
+
+</Shell>

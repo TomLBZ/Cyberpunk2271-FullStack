@@ -1,0 +1,152 @@
+Dependencies for Project 'Project', Target 'Project': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
+F (.\API.h)(0x6078E5DD)()
+F (.\Constants.h)(0x60793EE2)()
+F (.\Data.h)(0x60792B41)()
+F (.\Environment.h)(0x60784209)()
+F (.\Macros.h)(0x607840B3)()
+F (.\Global.h)(0x60794594)()
+F (.\Infrastructure.h)(0x60792E41)()
+F (.\Init.h)(0x607841CA)()
+F (.\Interrupts.h)(0x60784149)()
+F (.\Variables.h)(0x60792F8D)()
+F (.\Main.h)(0x60792EB6)()
+F (.\Main.c)(0x60794596)(--c99 -c --cpu Cortex-M0+ -D__RTX -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Project-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-ID:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (Main.h)(0x60792EB6)
+I (.\RTE\_Project\RTE_Components.h)(0x607872BE)
+I (D:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585B7C0A)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x60788DA1)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8F1798)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
+I (Global.h)(0x60794594)
+I (Init.h)(0x607841CA)
+I (Infrastructure.h)(0x60792E41)
+I (Data.h)(0x60792B41)
+I (Interrupts.h)(0x60784149)
+I (API.h)(0x6078E5DD)
+I (Macros.h)(0x607840B3)
+I (Variables.h)(0x60792F8D)
+I (Constants.h)(0x60793EE2)
+F (.\API.c)(0x60794FBF)(--c99 -c --cpu Cortex-M0+ -D__RTX -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Project-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-ID:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\api.o --omf_browse .\objects\api.crf --depend .\objects\api.d)
+I (Environment.h)(0x60784209)
+I (D:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585B7C0A)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x60788DA1)
+I (Constants.h)(0x60793EE2)
+I (Macros.h)(0x607840B3)
+I (Data.h)(0x60792B41)
+I (Variables.h)(0x60792F8D)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8F1798)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
+I (API.h)(0x6078E5DD)
+I (Infrastructure.h)(0x60792E41)
+F (.\Data.c)(0x607843DB)(--c99 -c --cpu Cortex-M0+ -D__RTX -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Project-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-ID:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\data.o --omf_browse .\objects\data.crf --depend .\objects\data.d)
+I (Data.h)(0x60792B41)
+I (D:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585B7C0A)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x60788DA1)
+F (.\Infrastructure.c)(0x60794965)(--c99 -c --cpu Cortex-M0+ -D__RTX -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Project-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-ID:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\infrastructure.o --omf_browse .\objects\infrastructure.crf --depend .\objects\infrastructure.d)
+I (Environment.h)(0x60784209)
+I (D:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585B7C0A)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x60788DA1)
+I (Constants.h)(0x60793EE2)
+I (Macros.h)(0x607840B3)
+I (Data.h)(0x60792B41)
+I (Variables.h)(0x60792F8D)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8F1798)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
+I (Infrastructure.h)(0x60792E41)
+F (.\Init.c)(0x60793EFF)(--c99 -c --cpu Cortex-M0+ -D__RTX -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Project-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-ID:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\init.o --omf_browse .\objects\init.crf --depend .\objects\init.d)
+I (Environment.h)(0x60784209)
+I (D:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585B7C0A)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x60788DA1)
+I (Constants.h)(0x60793EE2)
+I (Macros.h)(0x607840B3)
+I (Data.h)(0x60792B41)
+I (Variables.h)(0x60792F8D)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8F1798)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
+I (Init.h)(0x607841CA)
+I (Infrastructure.h)(0x60792E41)
+F (.\Interrupts.c)(0x6078E2DD)(--c99 -c --cpu Cortex-M0+ -D__RTX -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Project-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-ID:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\interrupts.o --omf_browse .\objects\interrupts.crf --depend .\objects\interrupts.d)
+I (Environment.h)(0x60784209)
+I (D:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585B7C0A)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x60788DA1)
+I (Constants.h)(0x60793EE2)
+I (Macros.h)(0x607840B3)
+I (Data.h)(0x60792B41)
+I (Variables.h)(0x60792F8D)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8F1798)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
+I (Interrupts.h)(0x60784149)
+I (Infrastructure.h)(0x60792E41)
+F (.\Variables.c)(0x607934FE)(--c99 -c --cpu Cortex-M0+ -D__RTX -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Project-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-ID:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\variables.o --omf_browse .\objects\variables.crf --depend .\objects\variables.d)
+I (Variables.h)(0x60792F8D)
+I (Data.h)(0x60792B41)
+I (D:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585B7C0A)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x60788DA1)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8F1798)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
+I (Constants.h)(0x60793EE2)
+F (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Library\ARM\RTX_CM0.lib)(0x5D2590B8)()
+F (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Source\rtx_lib.c)(0x5D2590B8)(--c99 -c --cpu Cortex-M0+ -D__RTX -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Project-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-ID:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\rtx_lib.o --omf_browse .\objects\rtx_lib.crf --depend .\objects\rtx_lib.d)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\RTE\CMSIS\RTX_Config.h)(0x6078F4C5)
+I (.\RTE\_Project\RTE_Components.h)(0x607872BE)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D2590B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8F1798)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h)(0x5D2590B8)
+F (RTE\CMSIS\RTX_Config.c)(0x60788DBC)(--c99 -c --cpu Cortex-M0+ -D__RTX -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Project-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-ID:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\rtx_config.o --omf_browse .\objects\rtx_config.crf --depend .\objects\rtx_config.d)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h)(0x5D2590B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8F1798)
+F (RTE\CMSIS\RTX_Config.h)(0x6078F4C5)()
+F (RTE\Device\MKL25Z128xxx4\startup_MKL25Z4.s)(0x6078ECF6)(--cpu Cortex-M0+ --pd "__RTX SETA 1" -g --apcs=interwork -I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Project-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-ID:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "MKL25Z128xxx4 SETA 1"--list .\listings\startup_mkl25z4.lst --xref -o .\objects\startup_mkl25z4.o --depend .\objects\startup_mkl25z4.d)
+F (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.c)(0x60788D8C)(--c99 -c --cpu Cortex-M0+ -D__RTX -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Project-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-ID:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-ID:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\system_mkl25z4.o --omf_browse .\objects\system_mkl25z4.crf --depend .\objects\system_mkl25z4.d)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (D:\Keil_v5\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585B7C0A)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2590B6)
+I (D:\Keil_v5\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2590B6)
+I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x60788DA1)
+F (RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x60788DA1)()

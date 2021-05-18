@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{548c49ae-4dd3-43ba-b697-516e80b66b47}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{5806d199-fa7c-4867-9738-9011187b0e6e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{b48e1b63-6eb8-4d7b-835e-2c7db8873303}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{cd5d5a05-6ace-447b-add3-988789d770e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{821d4f8a-63d3-4c60-8d9c-2a4d4c9b545e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{5fdf3a79-c39d-4e2f-b6e6-8af8b16779db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\RTOS2">
+      <UniqueIdentifier>{5ddece06-aae1-4985-b1f4-abe5fc7e260c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\RTOS2">
+      <UniqueIdentifier>{8e096e84-0511-4a69-8302-2cee49fdbfc2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClInclude Include="$(BSP_ROOT)\Device\Include\MKL25Z4.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <None Include="Cyberpunk2271EmbeddedCpp-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="Cyberpunk2271EmbeddedCpp-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="RTE\CMSIS\RTX_Config.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTE\Device\startup_MKL25Z4.s">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="RTE\Device\system_MKL25Z4.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(LOCALAPPDATA)\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_lib.c">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </ClCompile>
+    <Library Include="$(LOCALAPPDATA)\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Library\ARM\RTX_CM0.lib">
+      <Filter>Source files\Device-specific files\RTOS2</Filter>
+    </Library>
+    <ClInclude Include="RTE/RTE_Components.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTE\CMSIS\RTX_Config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="RTE\Device\system_MKL25Z4.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(LOCALAPPDATA)\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Include\rtx_os.h">
+      <Filter>Header files\Device-specific files\RTOS2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(LOCALAPPDATA)\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\Include\cmsis_os2.h">
+      <Filter>Header files\Device-specific files\RTOS2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GPIO.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Variables.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GPIO.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Variables.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

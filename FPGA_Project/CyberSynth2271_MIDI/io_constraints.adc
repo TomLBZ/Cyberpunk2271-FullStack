@@ -1,0 +1,15 @@
+set_pin_assignment	{ CLK_24MHZ }	{ LOCATION = K14; }
+set_pin_assignment	{ SPEAKER1 }	{ LOCATION = N5; DRIVESTRENGTH = 16; }
+set_pin_assignment	{ data_pins_i[0] }	{ LOCATION = M10; PULLTYPE = KEEPER; }
+set_pin_assignment	{ data_pins_i[1] }	{ LOCATION = P11; PULLTYPE = KEEPER; }
+set_pin_assignment	{ data_pins_i[2] }	{ LOCATION = L10; PULLTYPE = KEEPER; }
+set_pin_assignment	{ data_pins_i[3] }	{ LOCATION = N11; PULLTYPE = KEEPER; }
+set_pin_assignment	{ data_pins_i[4] }	{ LOCATION = P12; PULLTYPE = KEEPER; }
+set_pin_assignment	{ data_pins_i[5] }	{ LOCATION = N12; PULLTYPE = KEEPER; }
+set_pin_assignment	{ data_pins_i[6] }	{ LOCATION = R16; PULLTYPE = KEEPER; }
+set_pin_assignment	{ data_pins_i[7] }	{ LOCATION = M12; PULLTYPE = KEEPER; }
+
+
+
+
+

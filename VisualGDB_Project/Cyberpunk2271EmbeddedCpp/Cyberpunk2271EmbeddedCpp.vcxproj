@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{8A3CB5D4-83C9-4360-9B0D-B503FBC52DB8}</ProjectGuid>
+    <BSP_ID>KEIL:Keil/Kinetis_KLxx_DFP</BSP_ID>
+    <BSP_VERSION>1.15.0</BSP_VERSION>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armclang</ToolchainID>
+    <ToolchainVersion>6.x//r1</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armclang</ToolchainID>
+    <ToolchainVersion>6.x//r1</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <KeilSettingsContainer>
+      <KeilCPUType>Cortex-M0plus</KeilCPUType>
+    </KeilSettingsContainer>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <KeilSettingsContainer>
+      <ARMCPU>cortex-m0plus</ARMCPU>
+    </KeilSettingsContainer>
+    <Link>
+      <GenerateMap>true</GenerateMap>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="Variables.cpp" />
+    <ClInclude Include="Variables.h" />
+    <None Include="mcu.props" />
+    <ClInclude Include="$(BSP_ROOT)\Device\Include\MKL25Z4.h" />
+    <None Include="Cyberpunk2271EmbeddedCpp-Debug.vgdbsettings" />
+    <None Include="Cyberpunk2271EmbeddedCpp-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+    <ClCompile Include="GPIO.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="RTE\CMSIS\RTX_Config.c" />
+    <ClCompile Include="RTE\Device\startup_MKL25Z4.s" />
+    <ClCompile Include="RTE\Device\system_MKL25Z4.c" />
+    <ClCompile Include="$(LOCALAPPDATA)\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_lib.c" />
+    <Library Include="$(LOCALAPPDATA)\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Library\ARM\RTX_CM0.lib" />
+    <ClInclude Include="GPIO.h" />
+    <ClInclude Include="Macros.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="RTE/RTE_Components.h" />
+    <ClInclude Include="RTE\CMSIS\RTX_Config.h" />
+    <ClInclude Include="RTE\Device\system_MKL25Z4.h" />
+    <ClInclude Include="$(LOCALAPPDATA)\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Include\rtx_os.h" />
+    <ClInclude Include="$(LOCALAPPDATA)\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS2\Include\cmsis_os2.h" />
+  </ItemGroup>
+</Project>

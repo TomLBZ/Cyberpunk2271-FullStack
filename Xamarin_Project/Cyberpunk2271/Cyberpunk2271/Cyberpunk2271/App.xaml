@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cyberpunk2271.App">
+    <!--
+        Define global resources and styles here, that apply to all pages in your app.
+    -->
+    <!--old Primary is 2196F3, blue xamarin default.-->
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="RobotBlack">#23292E</Color>
+            <Color x:Key="RobotDarkBlue">#334D5C</Color>
+            <Color x:Key="RobotGreen">#55AD7A</Color>
+            <Color x:Key="RobotGrey">#D5D5D5</Color>
+            <Color x:Key="RobotBlue">#1E5D88</Color>
+            <Color x:Key="PunkDarkBlue">#01012B</Color>
+            <Color x:Key="PunkBlue">#005678</Color>
+            <Color x:Key="PunkLightBlue">#05D9E8</Color>
+            <Color x:Key="PunkAqua">#D1F7FF</Color>
+            <Color x:Key="PunkPink">#FF2A6D</Color>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="{StaticResource PunkAqua}"></Setter>
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{StaticResource RobotBlue}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Disabled">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{StaticResource RobotGrey}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+            <Style TargetType = "Label">
+                <Setter Property="TextColor" Value="{StaticResource RobotBlack}"></Setter>
+            </Style>
+        </ResourceDictionary>        
+    </Application.Resources>
+</Application>

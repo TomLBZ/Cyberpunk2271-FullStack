@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cyberpunk2271.Views.DrivePage"
+             xmlns:CustomControls="clr-namespace:Cyberpunk2271.CustomControls"
+             xmlns:ValueConverters="clr-namespace:Cyberpunk2271.ValueConverters"
+             xmlns:vm="clr-namespace:Cyberpunk2271.ViewModels"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:DriveViewModal />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ContentView Padding="0,5,0,0" VerticalOptions="Fill" 
+                         BackgroundColor="{StaticResource PunkPink}" 
+                         HorizontalOptions="FillAndExpand">
+                <Image Source="logo_2271.png" VerticalOptions="Center" HeightRequest="48" />
+            </ContentView>
+            <Label Text="Gas! Gas! Gas!"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="Center" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <CustomControls:JoystickControl x:Name="JoystickControl" Margin="0,0,0,0"
+                    Grid.Row="0" Grid.Column="0" BackgroundColor="{StaticResource RobotGrey}" />
+                
+                <Grid BindingContext="{x:Reference Name=JoystickControl}" Grid.Row="1" Grid.Column="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.Resources>
+                        <ResourceDictionary>
+                            <ValueConverters:DummyValueConverter x:Key="dummyConverter"/>
+                            <Style TargetType="Label">
+                                <Setter Property="HorizontalOptions" Value="Center"/>
+                                <Setter Property="VerticalOptions" Value="Center"/>
+                            </Style>
+                        </ResourceDictionary>
+                    </Grid.Resources>
+
+                    <Label Text="Xposition" Grid.Row="0" Grid.Column="0" />
+                    <Label Text="{Binding Xposition}" Grid.Row="0" Grid.Column="1"/>
+
+                    <Label Text="Yposition" Grid.Row="1" Grid.Column="0"/>
+                    <Label Text="{Binding Yposition}" Grid.Row="1" Grid.Column="1"/>
+
+                    <Label Text="Distance" Grid.Row="0" Grid.Column="2"/>
+                    <Label Text="{Binding Distance}" Grid.Row="0" Grid.Column="3"/>
+
+                    <Label Text="Angle" Grid.Row="1" Grid.Column="2"/>
+                    <Label Text="{Binding Angle}" Grid.Row="1" Grid.Column="3"/>
+
+                </Grid>
+
+            </Grid>
+            
+            <Grid>
+
+                <Button x:Name="btnModeChange" Grid.Row="3" Grid.Column="0" Margin="0,0,0,0" Text="Normal Drive"
+                        BackgroundColor="{StaticResource PunkDarkBlue}" Clicked="btnModeChange_Clicked"
+                        HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                        TextColor="{StaticResource PunkPink}" />
+                <Button x:Name="btnStartStop" Grid.Row="3" Grid.Column="1" Margin="0,0,0,0" Text="Start Sync"
+                        BackgroundColor="{StaticResource PunkDarkBlue}" Clicked="BtnStartStop_Clicked"
+                        HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                        TextColor="{StaticResource PunkPink}" />
+            </Grid>
+            <Grid BackgroundColor="{StaticResource PunkDarkBlue}" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <RadioButton x:Name="rad1" TextColor="Crimson" Content="AutoL Point Turn"
+                             Grid.Row="0" Grid.Column="0" FontSize="Body" IsChecked="true"
+                             IsEnabled="{Binding Source={x:Reference chkBoxAutoMode}, Path=IsChecked}"/>
+                <RadioButton x:Name="rad2" TextColor="Purple" Content="AutoR Point Turn"
+                             Grid.Row="0" Grid.Column="1" FontSize="Body"
+                             IsEnabled="{Binding Source={x:Reference chkBoxAutoMode}, Path=IsChecked}"/>
+                <RadioButton x:Name="rad3" TextColor="Green" Content="AutoL Round Turn"
+                             Grid.Row="1" Grid.Column="0" FontSize="Body"
+                             IsEnabled="{Binding Source={x:Reference chkBoxAutoMode}, Path=IsChecked}"/>
+                <RadioButton x:Name="rad4" TextColor="{StaticResource PunkLightBlue}" Content="AutoR Round Turn"
+                             Grid.Row="1" Grid.Column="1" FontSize="Body"
+                             IsEnabled="{Binding Source={x:Reference chkBoxAutoMode}, Path=IsChecked}"/>
+                <RadioButton x:Name="rad5" TextColor="Gold" Content="NOT AUTO"
+                             Grid.Row="2" Grid.Column="0" FontSize="Body"
+                             IsEnabled="{Binding Source={x:Reference chkBoxAutoMode}, Path=IsChecked}"/>
+                <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.Column="1" BackgroundColor="{StaticResource RobotGrey}">
+                    <CheckBox x:Name="chkBoxAutoMode" Color="{StaticResource PunkDarkBlue}" IsChecked="false" />
+                    <Label Text="Auto Mode" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

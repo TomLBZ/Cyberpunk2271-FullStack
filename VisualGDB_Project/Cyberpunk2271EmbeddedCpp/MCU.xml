@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<EmbeddedProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ToolchainID>com.sysprogs.toolchains.nongnu.armclang</ToolchainID>
+  <ToolchainVersion>
+    <GCC>6.x</GCC>
+    <Revision>1</Revision>
+  </ToolchainVersion>
+  <BspID>KEIL:Keil/Kinetis_KLxx_DFP</BspID>
+  <BspVersion>1.15.0</BspVersion>
+  <McuID>MKL25Z128xxx4</McuID>
+  <MCUDefinitionFile>SVD/MKL25Z4.svd</MCUDefinitionFile>
+  <MCUProperties>
+    <Entries />
+  </MCUProperties>
+  <BSPSourceFolderName>Device-specific files</BSPSourceFolderName>
+  <MCUMakFile>mcu.mak</MCUMakFile>
+  <ReferencedFrameworks />
+  <FrameworkProperties>
+    <Entries>
+      <KeyValue>
+        <Key>KEILCOMP:Board Support</Key>
+        <Value>FRDM-KL25Z</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Compiler</Key>
+        <Value>ARM Compiler</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:File System</Key>
+        <Value>MDK-Pro</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Graphics</Key>
+        <Value>MDK-Pro</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Network</Key>
+        <Value>MDK-Pro Net_v6</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:USB</Key>
+        <Value>MDK-Pro</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:CMSIS/CORE</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:Device/Startup</Key>
+        <Value>1</Value>
+      </KeyValue>
+      <KeyValue>
+        <Key>KEILCOMP:CMSIS/RTOS2/Keil RTX5/Library</Key>
+        <Value>1</Value>
+      </KeyValue>
+    </Entries>
+  </FrameworkProperties>
+  <TestFrameworkProperties>
+    <Entries />
+  </TestFrameworkProperties>
+  <SyntheticFrameworkFolderNames>
+    <string>CORE</string>
+    <string>RTOS2</string>
+    <string>Startup</string>
+    <string>RTE</string>
+  </SyntheticFrameworkFolderNames>
+</EmbeddedProfile>
