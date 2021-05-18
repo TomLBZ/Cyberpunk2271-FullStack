@@ -10,3 +10,11 @@ Note: By TomLBZ. Purposefully left non-completed for some parts. Do not copy.
 - Mobile Application: Robot controller on Android using Xamarin. (C#)
 - Visual GDB: For those who are comfortable using VisualGDB, there is a project template for it. (C++)
 - FPGA Peripherals: FPGA based midi music synthesizer (very basic version) and FPGA based DAC. (Verilog)
+
+## Hardware Requirements
+
+- Embedded System: FRDM-KL25Z development board (default target), or better ones (write your own definitions).
+- Embedded APIs: General.
+- Mobile Application: Android devices running Android X (default target), or above.
+- Visual GDB: General.
+- FPGA Peripherals: Sipeed Tang Primer FPGA (default target), or better ones (write your own constraint files).
